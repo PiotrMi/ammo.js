@@ -194,8 +194,14 @@
                 var volumeMass = 15;
 
                 var sphereGeometry = new THREE.SphereBufferGeometry( 1.5, 40, 25 );
-                sphereGeometry.translate( 5, 5, 0 );
+                sphereGeometry.translate( 5, 2, 0 );
                 createSoftVolume( sphereGeometry, volumeMass, 250 );
+
+                
+                var sphereGeometry2 = new THREE.SphereBufferGeometry( 1.5, 20, 25 );
+                sphereGeometry2.translate( 5, 10, 0 );
+                createSoftVolume( sphereGeometry2, volumeMass, 250 );
+                
 
                 var boxGeometry = new THREE.BufferGeometry().fromGeometry( new THREE.BoxGeometry( 1, 1, 5, 4, 4, 20 ) );
                 boxGeometry.translate( -2, 5, 0 );
